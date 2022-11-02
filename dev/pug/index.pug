@@ -1,0 +1,74 @@
+extends layout/main
+
+block variables
+	-var title = 'Тестовое задание'
+
+block content
+	#tabs-basic.tabs
+		.tabs-title.d-f
+			p.tabs-title-item.active Горный велосипед
+			p.tabs-title-item Женский велосипед
+		.tabs-content.d-f
+			.tabs-item.hide.show
+				.tabs-title-mobile
+					p Горный велосипед
+					img(src="static/images/arrow.svg", alt="bike")
+				.tabs-item__content
+					.tabs-item__top.d-f.ai-fs
+						img(src="static/images/bike-1.png", alt="bike").tabs-item__top-image.d-f.f-sh
+						img(src="static/images/bike-mobile-1.png", alt="bike").tabs-item__top-image--mobile.d-f.f-sh
+						.tabs-item__description
+							h2 Велосипед STELS Navigator 510 HD 26 2022
+							p Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.
+							p Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.
+					.tabs-item__charact
+						h3 Характеристики
+						.d-f
+							ol
+								li Двойной обод
+								li Алюминиевый сплав
+								li Колеса диаметром 26 дюймов
+								li Покрышки 26х1,95"
+					.tabs-item__add
+						h3 Добавить характеристику
+						.d-f.add-charact
+							input(type="text" placeholder="Алюминиевый сплав")
+							button Добавить
+					.tabs-item__billet
+						button Окей
+						button.button-cancel Отмена 
+			.tabs-item.hide
+				.tabs-title-mobile
+					p Женский велосипед
+					img(src="static/images/arrow.svg", alt="bike")
+				.tabs-item__content
+					.tabs-item__top.d-f.ai-fs
+						img(src="static/images/bike-2.png", alt="bike").d-f.f-sh
+						.tabs-item__description
+							h2 Велосипед SCHWINN Traveler women 2022
+							p Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.
+							p На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.
+					.tabs-item__charact
+						h3 Характеристики
+						.d-f
+							ul
+								li.d-f.ai-c
+									img(src="static/images/bike.svg", alt="Стальная рама")
+									| Стальная рама
+								li
+									img(src="static/images/bike.svg", alt="Стальная рама")
+									|  Жесткая вилка
+								li
+									img(src="static/images/bike.svg", alt="Стальная рама")
+									|  Колеса диаметром 24 дюймов
+								li
+									img(src="static/images/bike.svg", alt="Стальная рама")
+									|  7 скоростей
+					.tabs-item__add
+						h3 Добавить характеристику
+						.d-f.add-charact
+							input(type="text" placeholder="Алюминиевый сплав")
+							button Добавить
+					.tabs-item__billet
+						button Окей
+						button.button-cancel Отмена
